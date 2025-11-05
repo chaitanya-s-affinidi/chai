@@ -1,0 +1,9 @@
+{
+    "@context": [
+        "https://www.w3.org/ns/did/v1"
+    ],
+    "id": "did:web:chaitanya-s-affinidi.github.io:didwebvh-chai:",
+    "alsoKnownAs": [
+        "did:webvh:QmXQZDDZPKduHkcDQqwcVSaBbXkFQAEiN6dLqG9EerFoGE:chaitanya-s-affinidi.github.io:didwebvh-chai:"
+    ]
+}
