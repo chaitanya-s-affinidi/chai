@@ -6,3 +6,4 @@ uv.lock
 outputs/*
 cli/outputs/*
 __pycache__/
+secrets/*

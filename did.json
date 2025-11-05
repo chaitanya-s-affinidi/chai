@@ -1,9 +1,91 @@
 {
-    "@context": [
-        "https://www.w3.org/ns/did/v1"
-    ],
-    "id": "did:web:chaitanya-s-affinidi.github.io:didwebvh-chai:",
-    "alsoKnownAs": [
-        "did:webvh:QmXQZDDZPKduHkcDQqwcVSaBbXkFQAEiN6dLqG9EerFoGE:chaitanya-s-affinidi.github.io:didwebvh-chai:"
-    ]
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "assertionMethod": [
+    "did:web:chaitanya-s-affinidi.github.io/chai#key-1",
+    "did:web:chaitanya-s-affinidi.github.io/chai#key-2"
+  ],
+  "authentication": [
+    "did:web:chaitanya-s-affinidi.github.io/chai#key-1",
+    "did:web:chaitanya-s-affinidi.github.io/chai#key-2"
+  ],
+  "id": "did:web:chaitanya-s-affinidi.github.io/chai",
+  "keyAgreement": [
+    "did:web:chaitanya-s-affinidi.github.io/chai#key-3",
+    "did:web:chaitanya-s-affinidi.github.io/chai#key-4"
+  ],
+  "service": [
+    {
+      "id": "did:web:chaitanya-s-affinidi.github.io/chai#service",
+      "serviceEndpoint": [
+        {
+          "accept": [
+            "didcomm/v2"
+          ],
+          "routingKeys": [],
+          "uri": "https://chaitanya-s-affinidi.github.io/chai"
+        },
+        {
+          "accept": [
+            "didcomm/v2"
+          ],
+          "routingKeys": [],
+          "uri": "wss://chaitanya-s-affinidi.github.io/chai/ws"
+        }
+      ],
+      "type": "DIDCommMessaging"
+    },
+    {
+      "id": "did:web:chaitanya-s-affinidi.github.io/chai#auth",
+      "serviceEndpoint": "https://chaitanya-s-affinidi.github.io/chai/authenticate",
+      "type": "Authentication"
+    }
+  ],
+  "verificationMethod": [
+    {
+      "controller": "did:web:chaitanya-s-affinidi.github.io/chai",
+      "id": "did:web:chaitanya-s-affinidi.github.io/chai#key-1",
+      "publicKeyJwk": {
+        "crv": "P-256",
+        "kty": "EC",
+        "x": "n-FwsT0yj9zRAm4geky6YkhXdtCcAkYownv6xzyg5hM",
+        "y": "FmdJtqA7GZeIwVFo1Ue50aJp8Cw9Iw6RQriOlvyPhWY"
+      },
+      "type": "JsonWebKey2020"
+    },
+    {
+      "controller": "did:web:chaitanya-s-affinidi.github.io/chai",
+      "id": "did:web:chaitanya-s-affinidi.github.io/chai#key-2",
+      "publicKeyJwk": {
+        "crv": "Ed25519",
+        "kty": "OKP",
+        "x": "v_1mKEP7PLD80w9S9J7QW54Ps2XE545V6YW0W-Bch3E"
+      },
+      "type": "JsonWebKey2020"
+    },
+    {
+      "controller": "did:web:chaitanya-s-affinidi.github.io/chai",
+      "id": "did:web:chaitanya-s-affinidi.github.io/chai#key-3",
+      "publicKeyJwk": {
+        "crv": "secp256k1",
+        "kty": "EC",
+        "x": "yWZ2dTIQipVNgOv8U1wh4QS0rmXG8dSr6YDNUhwZM4g",
+        "y": "jfgmMibl-cds9Dt6rBS4HqxEaL3VtWvm07hzgalW6p4"
+      },
+      "type": "JsonWebKey2020"
+    },
+    {
+      "controller": "did:web:chaitanya-s-affinidi.github.io/chai",
+      "id": "did:web:chaitanya-s-affinidi.github.io/chai#key-4",
+      "publicKeyJwk": {
+        "crv": "P-256",
+        "kty": "EC",
+        "x": "n8tUb7XAtyUoJm-PYZUwGRpQFyIES2w6ciQ5f0-XMnI",
+        "y": "9_8-xe2kmMHcKSmXI6wz50kigbTsz-7ykLjOOv_Ah_E"
+      },
+      "type": "JsonWebKey2020"
+    }
+  ]
 }
