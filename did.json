@@ -4,21 +4,21 @@
     "https://w3id.org/security/suites/jws-2020/v1"
   ],
   "assertionMethod": [
-    "did:web:chaitanya-s-affinidi.github.io/chai#key-1",
-    "did:web:chaitanya-s-affinidi.github.io/chai#key-2"
+    "did:web:chaitanya-s-affinidi.github.io:chai#key-1",
+    "did:web:chaitanya-s-affinidi.github.io:chai#key-2"
   ],
   "authentication": [
-    "did:web:chaitanya-s-affinidi.github.io/chai#key-1",
-    "did:web:chaitanya-s-affinidi.github.io/chai#key-2"
+    "did:web:chaitanya-s-affinidi.github.io:chai#key-1",
+    "did:web:chaitanya-s-affinidi.github.io:chai#key-2"
   ],
-  "id": "did:web:chaitanya-s-affinidi.github.io/chai",
+  "id": "did:web:chaitanya-s-affinidi.github.io:chai",
   "keyAgreement": [
-    "did:web:chaitanya-s-affinidi.github.io/chai#key-3",
-    "did:web:chaitanya-s-affinidi.github.io/chai#key-4"
+    "did:web:chaitanya-s-affinidi.github.io:chai#key-3",
+    "did:web:chaitanya-s-affinidi.github.io:chai#key-4"
   ],
   "service": [
     {
-      "id": "did:web:chaitanya-s-affinidi.github.io/chai#service",
+      "id": "did:web:chaitanya-s-affinidi.github.io:chai#service",
       "serviceEndpoint": [
         {
           "accept": [
@@ -38,15 +38,15 @@
       "type": "DIDCommMessaging"
     },
     {
-      "id": "did:web:chaitanya-s-affinidi.github.io/chai#auth",
+      "id": "did:web:chaitanya-s-affinidi.github.io:chai#auth",
       "serviceEndpoint": "https://chaitanya-s-affinidi.github.io/chai/authenticate",
       "type": "Authentication"
     }
   ],
   "verificationMethod": [
     {
-      "controller": "did:web:chaitanya-s-affinidi.github.io/chai",
-      "id": "did:web:chaitanya-s-affinidi.github.io/chai#key-1",
+      "controller": "did:web:chaitanya-s-affinidi.github.io:chai",
+      "id": "did:web:chaitanya-s-affinidi.github.io:chai#key-1",
       "publicKeyJwk": {
         "crv": "P-256",
         "kty": "EC",
@@ -56,8 +56,8 @@
       "type": "JsonWebKey2020"
     },
     {
-      "controller": "did:web:chaitanya-s-affinidi.github.io/chai",
-      "id": "did:web:chaitanya-s-affinidi.github.io/chai#key-2",
+      "controller": "did:web:chaitanya-s-affinidi.github.io:chai",
+      "id": "did:web:chaitanya-s-affinidi.github.io:chai#key-2",
       "publicKeyJwk": {
         "crv": "Ed25519",
         "kty": "OKP",
@@ -66,8 +66,8 @@
       "type": "JsonWebKey2020"
     },
     {
-      "controller": "did:web:chaitanya-s-affinidi.github.io/chai",
-      "id": "did:web:chaitanya-s-affinidi.github.io/chai#key-3",
+      "controller": "did:web:chaitanya-s-affinidi.github.io:chai",
+      "id": "did:web:chaitanya-s-affinidi.github.io:chai#key-3",
       "publicKeyJwk": {
         "crv": "secp256k1",
         "kty": "EC",
@@ -77,8 +77,8 @@
       "type": "JsonWebKey2020"
     },
     {
-      "controller": "did:web:chaitanya-s-affinidi.github.io/chai",
-      "id": "did:web:chaitanya-s-affinidi.github.io/chai#key-4",
+      "controller": "did:web:chaitanya-s-affinidi.github.io:chai",
+      "id": "did:web:chaitanya-s-affinidi.github.io:chai#key-4",
       "publicKeyJwk": {
         "crv": "P-256",
         "kty": "EC",
